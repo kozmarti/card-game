@@ -1,0 +1,11 @@
+{% extends 'layout.html.twig' %}
+{% block content %}
+    <a class = "small-shine" href="/home/number"><div class="btn-shine small-shine"><- Deal other cards</div></a>
+    <div class="btn-shine"> Good luck!</div>
+<div class="flex">
+    {% for i in range(1, card_number) %}
+        <div class="card" data-id="{{ i }}">
+            <img id="{{ i }}" class="hidden" src="{{ cards[i] }}" alt="">
+        </div>
+    {% endfor %}
+{% endblock %}

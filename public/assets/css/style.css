@@ -1,0 +1,193 @@
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #110019;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center center;
+    background-image: none;
+}
+
+#starshine {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.shine {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-image: url("/assets/images/whitestar.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    overflow: hidden;
+    z-index: 2;
+    color: transparent;
+    -moz-opacity: 0.0;
+    opacity: 0.0;
+    animation: glitter 6s linear 0s infinite normal;
+    -webkit-animation: glitter 6s linear 0s infinite normal;
+    -moz-animation: glitter 8s linear 0s infinite normal;
+    -ms-animation: glitter 8s linear 0s infinite normal;
+    -o-animation: glitter 8s linear 0s infinite normal;
+}
+
+.shine.small {
+    width: 20px;
+    height: 20px;
+}
+
+.shine.medium {
+    width: 30px;
+    height: 30px;
+}
+
+.shine.large {
+    width: 50px;
+    height: 50px;
+}
+
+
+/*CSS3 keyframes for glittering effect*/
+
+@keyframes glitter {
+    0% {
+        -webkit-transform: scale(0.3) rotate(0deg);
+        opacity: 0;
+    }
+    25% {
+        -webkit-transform: scale(1) rotate(360deg);
+        opacity: 1;
+    }
+    50% {
+        -webkit-transform: scale(0.3) rotate(720deg);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: scale(0.3) rotate(0deg);
+        opacity: 0;
+    }
+}
+
+.text {
+    color: white;
+}
+
+.btn-shine {
+    padding: 100px;
+    font-family: Andale Mono, monospace;
+    text-transform: uppercase;
+    font-size: 3em;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #110019, #fff, #110019);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 3s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(17, 0, 25, 0);
+}
+
+@keyframes animate {
+    0% {
+        background-position: -500%;
+    }
+    100% {
+        background-position: 500%;
+    }
+}
+
+.start-game-btn {
+    font-family: Andale Mono, monospace;
+    padding: 30px;
+    color: #110019;
+    font-size: 1.2em;
+    border-radius: 15px;
+    z-index: 1000;
+    cursor: pointer;
+    margin:10px;
+}
+
+.start-game-btn:hover {
+    color:white;
+}
+
+.number-btn{
+    appearance: none;
+
+}
+.number-btn:hover {
+    color:#110019;
+
+}
+
+a {
+    padding: 30px;
+    text-decoration: none;
+    color: #110019;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*game
+ */
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1000;
+}
+
+.card {
+    cursor: pointer;
+    margin: 20px;
+    height: 200px;
+    background-color: black;
+    width: 200px;
+    border: 2px solid pink;
+    z-index: 1001;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.display-block {
+    display: block !important;
+}
+
+.small-shine{
+    font-size: 1em !important;
+    z-index: 2000;
+    align-self: flex-start;
+}

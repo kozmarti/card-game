@@ -1,0 +1,9 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+
+    <form action="/api/cards" method="post">
+        <label class="label-number btn-shine" for="number">Number of cards:</label><input class="start-game-btn number-btn" name="number" type="number" min="4" max="100">
+        <button type="submit" class="start-game-btn" >Let's go!</button>
+    </form>
+{% endblock %}

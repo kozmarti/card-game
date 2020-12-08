@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{% block title %}Memory Card Game{% endblock %}</title>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+    {% block stylesheet %}{% endblock %}
+    <link rel="icon" href="/assets/images/whitestar.svg">
+</head>
+
+<body>
+
+{% block content %}{% endblock %}
+<div id="starshine">
+    <div class="template shine"></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="/assets/css/script.js"></script>
+</body>
+</html>
+
+
