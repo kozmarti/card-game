@@ -16,8 +16,8 @@ Personal project inspired by an alogrythm of the DOJO session at the Wild Code S
 - CSS
 - JS
 - MVC
-- (simple mvc)[https://github.com/WildCodeSchool/simple-mvc]
-- (NASA API)[https://api.nasa.gov/]
+- [simple mvc](https://github.com/WildCodeSchool/simple-mvc)
+- [NASA API](https://api.nasa.gov/)
 - twig
 - HTML
 
