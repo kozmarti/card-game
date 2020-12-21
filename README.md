@@ -12,7 +12,7 @@ Personal project inspired by an alogrythm of the DOJO session at the Wild Code S
 
 ## Tools and languages
 
-- PHP
+- PHP 7.4
 - CSS
 - JS
 - MVC
