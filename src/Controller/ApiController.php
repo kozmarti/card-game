@@ -40,6 +40,9 @@ class ApiController extends AbstractController
         for ($i = 1; $i <= ($cardsNumber / 2); $i++) {
             $date = rand(2018, 2019) . '-' . rand(10, 12) . '-' . rand(10, 28);
             $cardImages[$i] = $this->nasaAPI($date);
+            if (strpos($cardImages[$i],'youtube')){
+                $i--;
+            }
         }
 
         for ($i = 1; $i <= ($cardsNumber); $i++) {
